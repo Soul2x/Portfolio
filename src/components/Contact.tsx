@@ -10,58 +10,51 @@ const Contact: React.FC = () => {
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-white to-blue-200 text-transparent bg-clip-text">
             Get in Touch
           </h2>
-          <p className="text-blue-100 mb-8">
-            Let's create something amazing together. Feel free to reach out!
+          <p className="text-blue-100 mb-12">
+            Feel free to reach out through any of these platforms. I'm always excited to connect!
           </p>
-          <form className="max-w-lg mx-auto">
-            <div className="mb-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200
-                         focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-transparent
-                         transition-all duration-300"
-              />
-            </div>
-            <div className="mb-6">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200
-                         focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-transparent
-                         transition-all duration-300"
-              />
-            </div>
-            <div className="mb-6">
-              <textarea
-                placeholder="Your Message"
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200
-                         focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-transparent
-                         transition-all duration-300"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full px-8 py-3 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 
-                       text-white hover:bg-white/20 transition-all duration-300
-                       shadow-lg hover:shadow-xl"
+          <div className="flex justify-center gap-12">
+            <a 
+              href="https://github.com/Soul2x" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300"
             >
-              Send Message
-            </button>
-          </form>
-          <div className="flex justify-center gap-6 mt-8">
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Github className="w-6 h-6" />
+              <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
+                <Github className="w-8 h-8" />
+              </div>
+              <span className="text-sm font-medium">GitHub</span>
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Linkedin className="w-6 h-6" />
+            <a 
+              href="https://linkedin.com/in/sumeet-singh-0935a9301/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300"
+            >
+              <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
+                <Linkedin className="w-8 h-8" />
+              </div>
+              <span className="text-sm font-medium">LinkedIn</span>
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Twitter className="w-6 h-6" />
+            <a 
+              href="https://twitter.com/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300"
+            >
+              <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
+                <Twitter className="w-8 h-8" />
+              </div>
+              <span className="text-sm font-medium">Twitter</span>
             </a>
-            <a href="#" className="text-blue-200 hover:text-white transition-colors">
-              <Mail className="w-6 h-6" />
+            <a 
+              href="mailto:soul404e@gmail.com" 
+              className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300"
+            >
+              <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
+                <Mail className="w-8 h-8" />
+              </div>
+              <span className="text-sm font-medium">Email</span>
             </a>
           </div>
         </div>
