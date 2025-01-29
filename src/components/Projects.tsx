@@ -1,25 +1,25 @@
 import React from 'react';
 import GlassCard from './GlassCard';
-import { Code, ExternalLink } from 'lucide-react';
+import { Clock, Stars, Sparkles } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Winter Analytics',
-    description: 'A dashboard for tracking winter sports performance metrics',
+    title: 'Coming Soon',
+    description: 'An exciting project is in development',
     image: 'https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&q=80&w=800',
-    tags: ['React', 'TypeScript', 'D3.js'],
+    icon: Clock,
   },
   {
-    title: 'Frost Framework',
-    description: 'A minimalist CSS framework inspired by ice crystals',
+    title: 'Stay Tuned',
+    description: 'Something amazing is brewing',
     image: 'https://images.unsplash.com/photo-1457269449834-928af64c684d?auto=format&fit=crop&q=80&w=800',
-    tags: ['CSS', 'JavaScript', 'Design Systems'],
+    icon: Stars,
   },
   {
-    title: 'Aurora',
-    description: 'A real-time northern lights prediction app',
+    title: 'In Progress',
+    description: 'Magic in the making',
     image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&q=80&w=800',
-    tags: ['React Native', 'Node.js', 'API Integration'],
+    icon: Sparkles,
   },
 ];
 
@@ -36,31 +36,12 @@ const Projects: React.FC = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover opacity-50"
               />
-              <div className="p-6">
+              <div className="p-6 text-center">
+                <project.icon className="w-12 h-12 mx-auto mb-4 text-blue-200 animate-pulse" />
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-blue-100 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 rounded-full text-sm bg-white/10 text-blue-100"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-blue-200 hover:text-white transition-colors">
-                    <Code className="w-4 h-4" />
-                    Code
-                  </button>
-                  <button className="flex items-center gap-2 text-blue-200 hover:text-white transition-colors">
-                    <ExternalLink className="w-4 h-4" />
-                    Demo
-                  </button>
-                </div>
+                <p className="text-blue-100">{project.description}</p>
               </div>
             </div>
           </GlassCard>
