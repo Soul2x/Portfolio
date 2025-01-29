@@ -2,6 +2,14 @@ import React from 'react';
 import { Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const scrollToProjects = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center relative px-4">
       <div className="text-center z-10">
@@ -16,9 +24,12 @@ const Hero: React.FC = () => {
         <p className="text-xl md:text-2xl text-blue-100 mb-8">
           Embracing the Chill of Creativity
         </p>
-        <button className="px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 
-                         text-white hover:bg-white/20 transition-all duration-300
-                         shadow-lg hover:shadow-xl">
+        <button 
+          onClick={scrollToProjects}
+          className="px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 
+                   text-white hover:bg-white/20 transition-all duration-300
+                   shadow-lg hover:shadow-xl active:scale-95"
+        >
           Explore My Work
         </button>
       </div>
