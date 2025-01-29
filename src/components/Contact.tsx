@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     github: "https://github.com/Soul2x",
     linkedin: "https://linkedin.com/in/sumeet-singh-0935a9301/",
     twitter: "https://twitter.com/solus",
-    email: "soul404e@gmail.com"
+    email: "mailto:soul404e@gmail.com"
   };
 
   const handleClick = (url: string) => {
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
               <span className="text-sm font-medium">Twitter</span>
             </button>
             <button 
-              onClick={() => handleClick(`mailto:${socialLinks.email}`)}
+              onClick={() => handleClick(socialLinks.email)}
               className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300 cursor-pointer active:scale-95"
             >
               <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
