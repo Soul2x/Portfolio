@@ -1,12 +1,12 @@
 import React from 'react';
 import GlassCard from './GlassCard';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const socialLinks = {
     github: "https://github.com/Soul2x",
     linkedin: "https://linkedin.com/in/sumeet-singh-0935a9301/",
-    twitter: "https://twitter.com/solus",
+    instagram: "https://instagram.com/solus.17",
     email: "mailto:soul404e@gmail.com"
   };
 
@@ -48,13 +48,13 @@ const Contact: React.FC = () => {
               <span className="text-sm font-medium">LinkedIn</span>
             </button>
             <button 
-              onClick={() => handleClick(socialLinks.twitter)}
+              onClick={() => handleClick(socialLinks.instagram)}
               className="group flex flex-col items-center gap-2 text-blue-200 hover:text-white transition-all duration-300 cursor-pointer active:scale-95"
             >
               <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-all duration-300">
-                <Twitter className="w-8 h-8" />
+                <Instagram className="w-8 h-8" />
               </div>
-              <span className="text-sm font-medium">Twitter</span>
+              <span className="text-sm font-medium">Instagram</span>
             </button>
             <button 
               onClick={() => handleClick(socialLinks.email)}
