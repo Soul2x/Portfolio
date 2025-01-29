@@ -8,6 +8,7 @@ interface GlassCardProps {
 const GlassCard: React.FC<GlassCardProps> = ({ children, className = '' }) => {
   return (
     <div className={`
+      relative
       backdrop-blur-md bg-white/10 rounded-2xl
       border border-white/20
       shadow-lg hover:shadow-2xl
@@ -17,8 +18,9 @@ const GlassCard: React.FC<GlassCardProps> = ({ children, className = '' }) => {
       group
       ${className}
     `}>
-      <div className="relative overflow-hidden rounded-2xl h-full">
-        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 pointer-events-none" />
+      <div className="relative z-10">
         {children}
       </div>
     </div>
