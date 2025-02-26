@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   const socialLinks = {
     github: "https://github.com/Soul2x",
     linkedin: "https://linkedin.com/in/sumeet-singh-0935a9301/",
-    instagram: "https://instagram.com/solus.17",
+    instagram: "https://instagram.com/solus.18",
     email: "mailto:soul404e@gmail.com"
   };
 
